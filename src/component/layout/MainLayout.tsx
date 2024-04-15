@@ -1,7 +1,6 @@
 import { Layout, Menu, MenuProps } from "antd";
 const { Header, Content, Footer, Sider } = Layout;
 
-
 const items: MenuProps["items"] = [
   {
     key: "1",
@@ -50,7 +49,18 @@ const MainLayout = () => {
           console.log(collapsed, type);
         }}
       >
-        <div className="demo-logo-vertical" />
+        <div
+          style={{
+            color: "white",
+            textAlign: "center",
+            height: "4rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1>Elysian</h1>
+        </div>
         <Menu
           theme="dark"
           mode="inline"
